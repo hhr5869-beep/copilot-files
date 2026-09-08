@@ -1,0 +1,287 @@
+[
+    {
+        "Id": "2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5",
+        "Created": "2020-02-04T04:19:51.891373889Z",
+        "Path": "/container/tool/run",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 9778,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-04T10:02:33.613844724Z",
+            "FinishedAt": "2026-08-30T22:59:01.64755163Z"
+        },
+        "Image": "sha256:6da445673bb01a06b188d19d32c0a0f5bd9f3708485df9e8c97ccc98b1ed9be8",
+        "ResolvConfPath": "/var/lib/docker/containers/2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5/hostname",
+        "HostsPath": "/var/lib/docker/containers/2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5/hosts",
+        "LogPath": "/var/lib/docker/containers/2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5/2cd85999f863ea70747cd16c9020df3fb101108ad8fe74764f952709733f7ad5-json.log",
+        "Name": "/openldap2",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "openldap_ldap_backup-2:/data/backup:rw",
+                "openldap_ldap_conf-2:/etc/ldap/slapd.d:rw",
+                "openldap_ldap_data-2:/var/lib/ldap:rw",
+                "/home/appadmin/plm-cloud-platform/middlewares/openldap/openldap-env.yaml:/container/environment/01-custom/env.yaml:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "openldap_default",
+            "PortBindings": {
+                "389/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "2389"
+                    }
+                ],
+                "636/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "2636"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/asound",
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/ff0a03c2f13b5a7bc6759615d2f593c1202902b629828f4ee8366dca9f877d1f-init/diff:/var/lib/docker/overlay2/308fc7242d365fc80a96c4df19e7233a777fae5c30db69582f6207f65c018ddb/diff:/var/lib/docker/overlay2/6a493f417d2f2b69f65da4fcf13ee40797cfffaad753d6318e0664afa593eb9e/diff:/var/lib/docker/overlay2/14c682a2e98c5d9642f5d05e4b38f756b630f2b14ba6476920c992c7fba759b8/diff:/var/lib/docker/overlay2/b917716eb15426d71f1fa144d77b0a9d84c80eb3b651f725251bfd9b2a00619c/diff:/var/lib/docker/overlay2/3bdb5506e4234c2969c89b148b32ba1b0710819f6c80648a68b26d9a2dd3ce49/diff:/var/lib/docker/overlay2/e8009edc4423601ade290e9d183ef4ef00ab3bf56e2de28d2199f5697f506ca7/diff:/var/lib/docker/overlay2/0eb6085e12da6834c08abf2446a4629bac003d3c8233c67c03a8209056f5ff92/diff:/var/lib/docker/overlay2/b2144c52a6000205cdc7e920a57de184a2b32d495c97f2b63902edc7e69a924d/diff:/var/lib/docker/overlay2/f97cab7689242840a29832777553eacc2164453a0f4acb0055d5153a947d98b6/diff:/var/lib/docker/overlay2/01fa796e4296a68736d1c78f5e590c728561b80d00a23dc16bfef81f4b054a25/diff:/var/lib/docker/overlay2/a5d56e9fde52a3d474e4f849c83bd6ec66206bc2bf4d026a95b37d6959e087b7/diff:/var/lib/docker/overlay2/d123dcffe0227928db5634dabfbb6cd64f0aefb24b9fdf3a6905c3ae3b5ca6c3/diff",
+                "MergedDir": "/var/lib/docker/overlay2/ff0a03c2f13b5a7bc6759615d2f593c1202902b629828f4ee8366dca9f877d1f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/ff0a03c2f13b5a7bc6759615d2f593c1202902b629828f4ee8366dca9f877d1f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/ff0a03c2f13b5a7bc6759615d2f593c1202902b629828f4ee8366dca9f877d1f/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "openldap_ldap_conf-2",
+                "Source": "/var/lib/docker/volumes/openldap_ldap_conf-2/_data",
+                "Destination": "/etc/ldap/slapd.d",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "openldap_ldap_data-2",
+                "Source": "/var/lib/docker/volumes/openldap_ldap_data-2/_data",
+                "Destination": "/var/lib/ldap",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/appadmin/plm-cloud-platform/middlewares/openldap/openldap-env.yaml",
+                "Destination": "/container/environment/01-custom/env.yaml",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "openldap_ldap_backup-2",
+                "Source": "/var/lib/docker/volumes/openldap_ldap_backup-2/_data",
+                "Destination": "/data/backup",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "openldap2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "389/tcp": {},
+                "636/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8"
+            ],
+            "Cmd": null,
+            "ArgsEscaped": true,
+            "Image": "osixia/openldap-backup:1.2.2",
+            "Volumes": {
+                "/container/environment/01-custom/env.yaml": {},
+                "/data/backup": {},
+                "/etc/ldap/slapd.d": {},
+                "/var/lib/ldap": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/container/tool/run"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "475a0a2b78dd4792a90e6cc9617f71d59863f567d144c5de5f0d9054df32f3d3",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "openldap",
+                "com.docker.compose.service": "openldap2",
+                "com.docker.compose.version": "1.21.0"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "10a143314f0cf1c7f34272258702369ac0f4f4a0fe2a98987f2f58ab36857040",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "389/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "2389"
+                    }
+                ],
+                "636/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "2636"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/10a143314f0c",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "openldap_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "openldap2",
+                        "2cd85999f863"
+                    ],
+                    "NetworkID": "9fe58298674cbc3420c0767e850d8574d245f01e08c2b6cca48829e05fe9fe80",
+                    "EndpointID": "f367576a2d5880cadeeed1ae828ff30a8746adbe493f271dbc9cf5e939309e21",
+                    "Gateway": "172.29.0.1",
+                    "IPAddress": "172.29.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:1d:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
